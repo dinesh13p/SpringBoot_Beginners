@@ -1,0 +1,76 @@
+package com.example.demo;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class Form {
+	
+	String[] shoppingList = new String[100];
+	int index = 0;
+	
+	@GetMapping("/register")
+	public String getRegisterPage() {
+		 return """ 
+		 	 <form action= "/save" method = "get">
+		 	<h2> Name:  <input type= "text" name = "fullname"  />   </h2> 
+		 	<h2> Address:    <input type= "text" name = "address"  /> </h2>  
+		 	     <input type= "submit"  value = "SUBMIT"  />
+		 	     
+		 	</form>
+		 	   	   	
+		 		""";
+		
+	}
+	
+
+	
+	@GetMapping("/save")
+	public String saveRegisterPage(
+			@RequestParam("fullname") String fullname,
+			@RequestParam("address")  String address)  {
+		 System.out.println("Name: " + fullname);
+		 System.out.println("Address: " + address);
+
+	return " <h1  > Success!! </h1>   <br> Full name: " + fullname + "<br> Address: " + address;
+	         
+	        
+	}
+	
+	@GetMapping("/shopping/new")
+	   public String getAddShoppingItemPage() {
+		return """
+				 <form action = "/shopping/save" method = "get" >
+				  <input type = "text" name = "item" /> 
+				   <input type = "submit" value = "ADD ITEM" />
+				   
+				  </form>   
+				""";
+	}
+	
+	
+	
+	@GetMapping("/shopping/save")
+	 public String saveNewShoppingItem(
+			@RequestParam("item") String item ) {
+		
+		System.out.println("item: " + item );
+		
+		return "item Added!!";
+	}
+			
+	@GetMapping("/shopping/list")
+	public String getShowShoppingListPage() {
+		   String result = "";
+		   for(int i = 0; i < index; i++) {
+			   result =  result + "<li>" +  shoppingList[i];
+		     }
+		   return result;
+	}
+
+	
+	
+       
+        
+}

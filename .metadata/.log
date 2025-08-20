@@ -1,0 +1,776 @@
+!SESSION 2025-08-17 12:43:19.179 -----------------------------------------------
+eclipse.buildId=4.36.0.202506052058
+java.version=21.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2025-08-17 12:44:12.469
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+!SESSION 2025-08-17 12:43:19.179 -----------------------------------------------
+eclipse.buildId=4.36.0.202506052058
+java.version=21.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2025-08-17 12:44:12.732
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2025-08-17 12:44:12.916
+!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.31.0 (331) Component descriptor entry 'OSGI-INF/*.xml' not found
+
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2025-08-17 12:44:13.186
+!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.31.0 (331) Component descriptor entry 'OSGI-INF/*.xml' not found
+
+!ENTRY org.eclipse.equinox.p2.reconciler.dropins 4 0 2025-08-17 12:44:25.493
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.start() of bundle org.eclipse.equinox.p2.reconciler.dropins.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:847)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:768)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1066)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:394)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:643)
+	at org.eclipse.osgi.container.Module.start(Module.java:500)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2110)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:146)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2101)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2043)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:2003)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1915)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+Caused by: java.lang.IllegalStateException: Profile DefaultProfile is not current. Expected timestamp 0 but was 0.
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.lockProfile(SimpleProfileRegistry.java:930)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:79)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:52)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.ProfileSynchronizer.executePlan(ProfileSynchronizer.java:829)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.ProfileSynchronizer.performAddRemove(ProfileSynchronizer.java:213)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.ProfileSynchronizer.synchronize(ProfileSynchronizer.java:149)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.synchronize(Activator.java:446)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.start(Activator.java:173)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:826)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:818)
+	... 14 more
+Root exception:
+java.lang.IllegalStateException: Profile DefaultProfile is not current. Expected timestamp 0 but was 0.
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.lockProfile(SimpleProfileRegistry.java:930)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:79)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:52)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.ProfileSynchronizer.executePlan(ProfileSynchronizer.java:829)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.ProfileSynchronizer.performAddRemove(ProfileSynchronizer.java:213)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.ProfileSynchronizer.synchronize(ProfileSynchronizer.java:149)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.synchronize(Activator.java:446)
+	at org.eclipse.equinox.internal.p2.reconciler.dropins.Activator.start(Activator.java:173)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:826)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:818)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:768)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1066)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:394)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:643)
+	at org.eclipse.osgi.container.Module.start(Module.java:500)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2110)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:146)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2101)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2043)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:2003)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1915)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY ch.qos.logback.classic 1 0 2025-08-17 12:44:29.972
+!MESSAGE Logback config file: C:\Users\Administrator\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-08-17 12:44:30.992
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-08-17 12:44:30.992
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-08-17 12:44:31.719
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-08-17 12:44:31.719
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2025-08-17 12:44:47.261
+!MESSAGE No search provider was registered. Tasks search is not available.
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-08-17 12:44:51.820
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY Activator 4 0 2025-08-17 12:47:30.656
+!MESSAGE SocketException: Connection reset
+!STACK 0
+java.lang.reflect.InvocationTargetException
+	at org.springframework.ide.eclipse.buildship30.Buildship30ImportStrategy$1.run(Buildship30ImportStrategy.java:114)
+	at org.springframework.ide.eclipse.buildship30.Buildship30ImportStrategy$1.run(Buildship30ImportStrategy.java:1)
+	at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizardModel.importProject(NewSpringBootWizardModel.java:343)
+	at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizardModel.performFinish(NewSpringBootWizardModel.java:322)
+	at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizard$1.runInWorkspace(NewSpringBootWizard.java:239)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.core.runtime.CoreException: Project synchronization failed due to an error connecting to the Gradle build.
+	at org.springsource.ide.eclipse.commons.livexp.util.ExceptionUtil.coreException(ExceptionUtil.java:53)
+	at org.springframework.ide.eclipse.buildship30.Buildship30ImportStrategy$1.run(Buildship30ImportStrategy.java:104)
+	... 6 more
+Caused by: org.gradle.tooling.GradleConnectionException: Could not install Gradle distribution from 'https://services.gradle.org/distributions/gradle-8.14.3-bin.zip'.
+	at org.gradle.tooling.internal.consumer.DistributionFactory$ZippedDistribution.getToolingImplementationClasspath(DistributionFactory.java:135)
+	at org.gradle.tooling.internal.consumer.loader.CachingToolingImplementationLoader.create(CachingToolingImplementationLoader.java:47)
+	at org.gradle.tooling.internal.consumer.loader.SynchronizedToolingImplementationLoader.create(SynchronizedToolingImplementationLoader.java:44)
+	at org.gradle.tooling.internal.consumer.connection.LazyConsumerActionExecutor.onStartAction(LazyConsumerActionExecutor.java:160)
+	at org.gradle.tooling.internal.consumer.connection.LazyConsumerActionExecutor.run(LazyConsumerActionExecutor.java:142)
+	at org.gradle.tooling.internal.consumer.connection.CancellableConsumerActionExecutor.run(CancellableConsumerActionExecutor.java:45)
+	at org.gradle.tooling.internal.consumer.connection.ProgressLoggingConsumerActionExecutor.run(ProgressLoggingConsumerActionExecutor.java:61)
+	at org.gradle.tooling.internal.consumer.connection.RethrowingErrorsConsumerActionExecutor.run(RethrowingErrorsConsumerActionExecutor.java:38)
+	at org.gradle.tooling.internal.consumer.async.DefaultAsyncConsumerActionExecutor$1$1.run(DefaultAsyncConsumerActionExecutor.java:66)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+	at org.gradle.tooling.internal.consumer.BlockingResultHandler.getResult(BlockingResultHandler.java:46)
+	at org.gradle.tooling.internal.consumer.DefaultModelBuilder.get(DefaultModelBuilder.java:50)
+	at org.gradle.tooling.internal.consumer.DefaultProjectConnection.getModel(DefaultProjectConnection.java:57)
+	at org.eclipse.buildship.core.internal.util.gradle.CompatProjectConnection.getModel(CompatProjectConnection.java:55)
+	at org.eclipse.buildship.core.internal.util.gradle.IdeAttachedProjectConnection.configureOperation(IdeAttachedProjectConnection.java:69)
+	at org.eclipse.buildship.core.internal.util.gradle.IdeAttachedProjectConnection.model(IdeAttachedProjectConnection.java:60)
+	at org.eclipse.buildship.core.internal.util.gradle.IdeAttachedProjectConnection.getModel(IdeAttachedProjectConnection.java:87)
+	at org.eclipse.buildship.core.internal.CompatibilityChecker.lambda$validateToolingApiCompatibility$0(CompatibilityChecker.java:55)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild$GradleConnectionOperation.runInToolingApi(DefaultGradleBuild.java:337)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager$WorkspaceRunnableAdapter.run(DefaultToolingApiOperationManager.java:58)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2457)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2482)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager.run(DefaultToolingApiOperationManager.java:39)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild.withConnection(DefaultGradleBuild.java:127)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild.withConnection(DefaultGradleBuild.java:117)
+	at org.eclipse.buildship.core.internal.CompatibilityChecker.validateToolingApiCompatibility(CompatibilityChecker.java:55)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild.synchronize(DefaultGradleBuild.java:90)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild.synchronize(DefaultGradleBuild.java:86)
+	at org.springframework.ide.eclipse.buildship30.Buildship30ImportStrategy$1.run(Buildship30ImportStrategy.java:84)
+	... 6 more
+Caused by: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:489)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readFully(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decodeInputRecord(SSLSocketInputRecord.java:243)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:181)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:111)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1509)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1480)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1066)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:345)
+	at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:420)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:399)
+	at java.base/sun.net.www.MeteredStream.read(MeteredStream.java:131)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:119)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3692)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3685)
+	at org.gradle.wrapper.Download.downloadInternal(Download.java:136)
+	at org.gradle.wrapper.Download.download(Download.java:110)
+	at org.gradle.tooling.internal.consumer.DistributionInstaller$AsyncDownload$1.run(DistributionInstaller.java:182)
+Root exception:
+org.eclipse.core.runtime.CoreException: Project synchronization failed due to an error connecting to the Gradle build.
+	at org.springsource.ide.eclipse.commons.livexp.util.ExceptionUtil.coreException(ExceptionUtil.java:53)
+	at org.springframework.ide.eclipse.buildship30.Buildship30ImportStrategy$1.run(Buildship30ImportStrategy.java:104)
+	at org.springframework.ide.eclipse.buildship30.Buildship30ImportStrategy$1.run(Buildship30ImportStrategy.java:1)
+	at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizardModel.importProject(NewSpringBootWizardModel.java:343)
+	at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizardModel.performFinish(NewSpringBootWizardModel.java:322)
+	at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizard$1.runInWorkspace(NewSpringBootWizard.java:239)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.gradle.tooling.GradleConnectionException: Could not install Gradle distribution from 'https://services.gradle.org/distributions/gradle-8.14.3-bin.zip'.
+	at org.gradle.tooling.internal.consumer.DistributionFactory$ZippedDistribution.getToolingImplementationClasspath(DistributionFactory.java:135)
+	at org.gradle.tooling.internal.consumer.loader.CachingToolingImplementationLoader.create(CachingToolingImplementationLoader.java:47)
+	at org.gradle.tooling.internal.consumer.loader.SynchronizedToolingImplementationLoader.create(SynchronizedToolingImplementationLoader.java:44)
+	at org.gradle.tooling.internal.consumer.connection.LazyConsumerActionExecutor.onStartAction(LazyConsumerActionExecutor.java:160)
+	at org.gradle.tooling.internal.consumer.connection.LazyConsumerActionExecutor.run(LazyConsumerActionExecutor.java:142)
+	at org.gradle.tooling.internal.consumer.connection.CancellableConsumerActionExecutor.run(CancellableConsumerActionExecutor.java:45)
+	at org.gradle.tooling.internal.consumer.connection.ProgressLoggingConsumerActionExecutor.run(ProgressLoggingConsumerActionExecutor.java:61)
+	at org.gradle.tooling.internal.consumer.connection.RethrowingErrorsConsumerActionExecutor.run(RethrowingErrorsConsumerActionExecutor.java:38)
+	at org.gradle.tooling.internal.consumer.async.DefaultAsyncConsumerActionExecutor$1$1.run(DefaultAsyncConsumerActionExecutor.java:66)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+	at org.gradle.tooling.internal.consumer.BlockingResultHandler.getResult(BlockingResultHandler.java:46)
+	at org.gradle.tooling.internal.consumer.DefaultModelBuilder.get(DefaultModelBuilder.java:50)
+	at org.gradle.tooling.internal.consumer.DefaultProjectConnection.getModel(DefaultProjectConnection.java:57)
+	at org.eclipse.buildship.core.internal.util.gradle.CompatProjectConnection.getModel(CompatProjectConnection.java:55)
+	at org.eclipse.buildship.core.internal.util.gradle.IdeAttachedProjectConnection.configureOperation(IdeAttachedProjectConnection.java:69)
+	at org.eclipse.buildship.core.internal.util.gradle.IdeAttachedProjectConnection.model(IdeAttachedProjectConnection.java:60)
+	at org.eclipse.buildship.core.internal.util.gradle.IdeAttachedProjectConnection.getModel(IdeAttachedProjectConnection.java:87)
+	at org.eclipse.buildship.core.internal.CompatibilityChecker.lambda$validateToolingApiCompatibility$0(CompatibilityChecker.java:55)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild$GradleConnectionOperation.runInToolingApi(DefaultGradleBuild.java:337)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager$WorkspaceRunnableAdapter.run(DefaultToolingApiOperationManager.java:58)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2457)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2482)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager.run(DefaultToolingApiOperationManager.java:39)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild.withConnection(DefaultGradleBuild.java:127)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild.withConnection(DefaultGradleBuild.java:117)
+	at org.eclipse.buildship.core.internal.CompatibilityChecker.validateToolingApiCompatibility(CompatibilityChecker.java:55)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild.synchronize(DefaultGradleBuild.java:90)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild.synchronize(DefaultGradleBuild.java:86)
+	at org.springframework.ide.eclipse.buildship30.Buildship30ImportStrategy$1.run(Buildship30ImportStrategy.java:84)
+	... 6 more
+Caused by: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:489)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readFully(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decodeInputRecord(SSLSocketInputRecord.java:243)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:181)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:111)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1509)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1480)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1066)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:345)
+	at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:420)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:399)
+	at java.base/sun.net.www.MeteredStream.read(MeteredStream.java:131)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:119)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3692)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3685)
+	at org.gradle.wrapper.Download.downloadInternal(Download.java:136)
+	at org.gradle.wrapper.Download.download(Download.java:110)
+	at org.gradle.tooling.internal.consumer.DistributionInstaller$AsyncDownload$1.run(DistributionInstaller.java:182)
+
+!ENTRY Activator 4 0 2025-08-17 12:51:10.226
+!MESSAGE SocketTimeoutException: Read timed out
+!STACK 0
+java.lang.reflect.InvocationTargetException
+	at org.springframework.ide.eclipse.buildship30.Buildship30ImportStrategy$1.run(Buildship30ImportStrategy.java:114)
+	at org.springframework.ide.eclipse.buildship30.Buildship30ImportStrategy$1.run(Buildship30ImportStrategy.java:1)
+	at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizardModel.importProject(NewSpringBootWizardModel.java:343)
+	at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizardModel.performFinish(NewSpringBootWizardModel.java:322)
+	at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizard$1.runInWorkspace(NewSpringBootWizard.java:239)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.core.runtime.CoreException: Project synchronization failed due to an error connecting to the Gradle build.
+	at org.springsource.ide.eclipse.commons.livexp.util.ExceptionUtil.coreException(ExceptionUtil.java:53)
+	at org.springframework.ide.eclipse.buildship30.Buildship30ImportStrategy$1.run(Buildship30ImportStrategy.java:104)
+	... 6 more
+Caused by: org.gradle.tooling.GradleConnectionException: Could not install Gradle distribution from 'https://services.gradle.org/distributions/gradle-8.14.3-bin.zip'.
+	at org.gradle.tooling.internal.consumer.DistributionFactory$ZippedDistribution.getToolingImplementationClasspath(DistributionFactory.java:135)
+	at org.gradle.tooling.internal.consumer.loader.CachingToolingImplementationLoader.create(CachingToolingImplementationLoader.java:47)
+	at org.gradle.tooling.internal.consumer.loader.SynchronizedToolingImplementationLoader.create(SynchronizedToolingImplementationLoader.java:44)
+	at org.gradle.tooling.internal.consumer.connection.LazyConsumerActionExecutor.onStartAction(LazyConsumerActionExecutor.java:160)
+	at org.gradle.tooling.internal.consumer.connection.LazyConsumerActionExecutor.run(LazyConsumerActionExecutor.java:142)
+	at org.gradle.tooling.internal.consumer.connection.CancellableConsumerActionExecutor.run(CancellableConsumerActionExecutor.java:45)
+	at org.gradle.tooling.internal.consumer.connection.ProgressLoggingConsumerActionExecutor.run(ProgressLoggingConsumerActionExecutor.java:61)
+	at org.gradle.tooling.internal.consumer.connection.RethrowingErrorsConsumerActionExecutor.run(RethrowingErrorsConsumerActionExecutor.java:38)
+	at org.gradle.tooling.internal.consumer.async.DefaultAsyncConsumerActionExecutor$1$1.run(DefaultAsyncConsumerActionExecutor.java:66)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+	at org.gradle.tooling.internal.consumer.BlockingResultHandler.getResult(BlockingResultHandler.java:46)
+	at org.gradle.tooling.internal.consumer.DefaultModelBuilder.get(DefaultModelBuilder.java:50)
+	at org.gradle.tooling.internal.consumer.DefaultProjectConnection.getModel(DefaultProjectConnection.java:57)
+	at org.eclipse.buildship.core.internal.util.gradle.CompatProjectConnection.getModel(CompatProjectConnection.java:55)
+	at org.eclipse.buildship.core.internal.util.gradle.IdeAttachedProjectConnection.configureOperation(IdeAttachedProjectConnection.java:69)
+	at org.eclipse.buildship.core.internal.util.gradle.IdeAttachedProjectConnection.model(IdeAttachedProjectConnection.java:60)
+	at org.eclipse.buildship.core.internal.util.gradle.IdeAttachedProjectConnection.getModel(IdeAttachedProjectConnection.java:87)
+	at org.eclipse.buildship.core.internal.CompatibilityChecker.lambda$validateToolingApiCompatibility$0(CompatibilityChecker.java:55)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild$GradleConnectionOperation.runInToolingApi(DefaultGradleBuild.java:337)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager$WorkspaceRunnableAdapter.run(DefaultToolingApiOperationManager.java:58)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2457)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2482)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager.run(DefaultToolingApiOperationManager.java:39)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild.withConnection(DefaultGradleBuild.java:127)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild.withConnection(DefaultGradleBuild.java:117)
+	at org.eclipse.buildship.core.internal.CompatibilityChecker.validateToolingApiCompatibility(CompatibilityChecker.java:55)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild.synchronize(DefaultGradleBuild.java:90)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild.synchronize(DefaultGradleBuild.java:86)
+	at org.springframework.ide.eclipse.buildship30.Buildship30ImportStrategy$1.run(Buildship30ImportStrategy.java:84)
+	... 6 more
+Caused by: java.io.IOException: Downloading from https://services.gradle.org/distributions/gradle-8.14.3-bin.zip failed: timeout (10000ms)
+	at org.gradle.wrapper.Download.downloadInternal(Download.java:152)
+	at org.gradle.wrapper.Download.download(Download.java:110)
+	at org.gradle.tooling.internal.consumer.DistributionInstaller$AsyncDownload$1.run(DistributionInstaller.java:182)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:278)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:304)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:489)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readFully(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decodeInputRecord(SSLSocketInputRecord.java:243)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:181)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:111)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1509)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1480)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1066)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:345)
+	at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:420)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:399)
+	at java.base/sun.net.www.MeteredStream.read(MeteredStream.java:131)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:119)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3692)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3685)
+	at org.gradle.wrapper.Download.downloadInternal(Download.java:136)
+	... 2 more
+Root exception:
+org.eclipse.core.runtime.CoreException: Project synchronization failed due to an error connecting to the Gradle build.
+	at org.springsource.ide.eclipse.commons.livexp.util.ExceptionUtil.coreException(ExceptionUtil.java:53)
+	at org.springframework.ide.eclipse.buildship30.Buildship30ImportStrategy$1.run(Buildship30ImportStrategy.java:104)
+	at org.springframework.ide.eclipse.buildship30.Buildship30ImportStrategy$1.run(Buildship30ImportStrategy.java:1)
+	at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizardModel.importProject(NewSpringBootWizardModel.java:343)
+	at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizardModel.performFinish(NewSpringBootWizardModel.java:322)
+	at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizard$1.runInWorkspace(NewSpringBootWizard.java:239)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.gradle.tooling.GradleConnectionException: Could not install Gradle distribution from 'https://services.gradle.org/distributions/gradle-8.14.3-bin.zip'.
+	at org.gradle.tooling.internal.consumer.DistributionFactory$ZippedDistribution.getToolingImplementationClasspath(DistributionFactory.java:135)
+	at org.gradle.tooling.internal.consumer.loader.CachingToolingImplementationLoader.create(CachingToolingImplementationLoader.java:47)
+	at org.gradle.tooling.internal.consumer.loader.SynchronizedToolingImplementationLoader.create(SynchronizedToolingImplementationLoader.java:44)
+	at org.gradle.tooling.internal.consumer.connection.LazyConsumerActionExecutor.onStartAction(LazyConsumerActionExecutor.java:160)
+	at org.gradle.tooling.internal.consumer.connection.LazyConsumerActionExecutor.run(LazyConsumerActionExecutor.java:142)
+	at org.gradle.tooling.internal.consumer.connection.CancellableConsumerActionExecutor.run(CancellableConsumerActionExecutor.java:45)
+	at org.gradle.tooling.internal.consumer.connection.ProgressLoggingConsumerActionExecutor.run(ProgressLoggingConsumerActionExecutor.java:61)
+	at org.gradle.tooling.internal.consumer.connection.RethrowingErrorsConsumerActionExecutor.run(RethrowingErrorsConsumerActionExecutor.java:38)
+	at org.gradle.tooling.internal.consumer.async.DefaultAsyncConsumerActionExecutor$1$1.run(DefaultAsyncConsumerActionExecutor.java:66)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+	at org.gradle.tooling.internal.consumer.BlockingResultHandler.getResult(BlockingResultHandler.java:46)
+	at org.gradle.tooling.internal.consumer.DefaultModelBuilder.get(DefaultModelBuilder.java:50)
+	at org.gradle.tooling.internal.consumer.DefaultProjectConnection.getModel(DefaultProjectConnection.java:57)
+	at org.eclipse.buildship.core.internal.util.gradle.CompatProjectConnection.getModel(CompatProjectConnection.java:55)
+	at org.eclipse.buildship.core.internal.util.gradle.IdeAttachedProjectConnection.configureOperation(IdeAttachedProjectConnection.java:69)
+	at org.eclipse.buildship.core.internal.util.gradle.IdeAttachedProjectConnection.model(IdeAttachedProjectConnection.java:60)
+	at org.eclipse.buildship.core.internal.util.gradle.IdeAttachedProjectConnection.getModel(IdeAttachedProjectConnection.java:87)
+	at org.eclipse.buildship.core.internal.CompatibilityChecker.lambda$validateToolingApiCompatibility$0(CompatibilityChecker.java:55)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild$GradleConnectionOperation.runInToolingApi(DefaultGradleBuild.java:337)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager$WorkspaceRunnableAdapter.run(DefaultToolingApiOperationManager.java:58)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2457)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2482)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager.run(DefaultToolingApiOperationManager.java:39)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild.withConnection(DefaultGradleBuild.java:127)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild.withConnection(DefaultGradleBuild.java:117)
+	at org.eclipse.buildship.core.internal.CompatibilityChecker.validateToolingApiCompatibility(CompatibilityChecker.java:55)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild.synchronize(DefaultGradleBuild.java:90)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild.synchronize(DefaultGradleBuild.java:86)
+	at org.springframework.ide.eclipse.buildship30.Buildship30ImportStrategy$1.run(Buildship30ImportStrategy.java:84)
+	... 6 more
+Caused by: java.io.IOException: Downloading from https://services.gradle.org/distributions/gradle-8.14.3-bin.zip failed: timeout (10000ms)
+	at org.gradle.wrapper.Download.downloadInternal(Download.java:152)
+	at org.gradle.wrapper.Download.download(Download.java:110)
+	at org.gradle.tooling.internal.consumer.DistributionInstaller$AsyncDownload$1.run(DistributionInstaller.java:182)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:278)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:304)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:489)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readFully(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decodeInputRecord(SSLSocketInputRecord.java:243)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:181)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:111)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1509)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1480)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1066)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:345)
+	at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:420)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:399)
+	at java.base/sun.net.www.MeteredStream.read(MeteredStream.java:131)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:119)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3692)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3685)
+	at org.gradle.wrapper.Download.downloadInternal(Download.java:136)
+	... 2 more
+
+!ENTRY org.eclipse.ui 4 0 2025-08-17 13:10:40.210
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4945)
+	at org.eclipse.swt.SWT.error(SWT.java:4860)
+	at org.eclipse.swt.SWT.error(SWT.java:4831)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:507)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:426)
+	at org.eclipse.swt.widgets.Menu.indexOf(Menu.java:832)
+	at org.eclipse.swt.widgets.Menu.wmTimer(Menu.java:1352)
+	at org.eclipse.swt.widgets.Control.WM_TIMER(Control.java:5715)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4863)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:336)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1494)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2387)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5106)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:241)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4177)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3718)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:678)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:583)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:185)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+
+!ENTRY org.eclipse.jface 2 0 2025-08-17 13:17:59.038
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-08-17 13:17:59.038
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolInWorkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolInWorkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SESSION 2025-08-18 13:29:05.232 -----------------------------------------------
+eclipse.buildId=4.36.0.202506052058
+java.version=21.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2025-08-18 13:29:36.775
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2025-08-18 13:29:36.989
+!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.31.0 (331) Component descriptor entry 'OSGI-INF/*.xml' not found
+
+!ENTRY ch.qos.logback.classic 1 0 2025-08-18 13:30:38.233
+!MESSAGE Logback config file: C:\Users\Administrator\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-08-18 13:30:38.663
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-08-18 13:30:38.663
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-08-18 13:30:38.995
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-08-18 13:30:38.995
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2025-08-18 13:30:52.222
+!MESSAGE No search provider was registered. Tasks search is not available.
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-08-18 13:30:52.962
+!MESSAGE Timed out after waiting for 300ms for semantic tokens from Language Servers
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaSemanticTokensProvider.computeSemanticTokens(LSJavaSemanticTokensProvider.java:68)
+	at org.eclipse.jdt.internal.ui.javaeditor.SemanticHighlightingReconciler.getContributedSemanticTokens(SemanticHighlightingReconciler.java:423)
+	at org.eclipse.jdt.internal.ui.javaeditor.SemanticHighlightingReconciler.reconciled(SemanticHighlightingReconciler.java:470)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.reconciled(CompilationUnitEditor.java:1674)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconciled(JavaReconcilingStrategy.java:228)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconciled(JavaCompositeReconcilingStrategy.java:171)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.initialReconcile(JavaCompositeReconcilingStrategy.java:147)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.initialProcess(MonoReconciler.java:100)
+	at org.eclipse.jdt.internal.ui.text.JavaReconciler.initialProcess(JavaReconciler.java:425)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:177)
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-08-18 13:30:54.556
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-08-18 13:30:55.988
+!MESSAGE Timed out after waiting for 300ms for semantic tokens from Language Servers
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaSemanticTokensProvider.computeSemanticTokens(LSJavaSemanticTokensProvider.java:68)
+	at org.eclipse.jdt.internal.ui.javaeditor.SemanticHighlightingReconciler.getContributedSemanticTokens(SemanticHighlightingReconciler.java:423)
+	at org.eclipse.jdt.internal.ui.javaeditor.SemanticHighlightingReconciler.reconciled(SemanticHighlightingReconciler.java:470)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.reconciled(CompilationUnitEditor.java:1674)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconciled(JavaReconcilingStrategy.java:228)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconciled(JavaCompositeReconcilingStrategy.java:171)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:115)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-08-18 13:35:07.400
+!MESSAGE org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.operations.codeactions.LSPCodeActionMarkerResolution.checkMarkerResolution(LSPCodeActionMarkerResolution.java:159)
+	at org.eclipse.lsp4e.operations.codeactions.LSPCodeActionMarkerResolution.hasResolutions(LSPCodeActionMarkerResolution.java:210)
+	at org.eclipse.ui.internal.ide.registry.MarkerHelpRegistry.hasResolution(MarkerHelpRegistry.java:263)
+	at org.eclipse.ui.internal.ide.registry.MarkerHelpRegistry.hasResolutions(MarkerHelpRegistry.java:236)
+	at org.eclipse.ui.views.markers.MarkerField.annotateImage(MarkerField.java:86)
+	at org.eclipse.ui.internal.views.markers.MarkerProblemSeverityAndMessageField.update(MarkerProblemSeverityAndMessageField.java:80)
+	at org.eclipse.ui.internal.views.markers.MarkerColumnLabelProvider.update(MarkerColumnLabelProvider.java:54)
+	at org.eclipse.jface.viewers.ViewerColumn.refresh(ViewerColumn.java:149)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:998)
+	at org.eclipse.ui.internal.views.markers.MarkersTreeViewer.doUpdateItem(MarkersTreeViewer.java:62)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$UpdateItemSafeRunnable.run(AbstractTreeViewer.java:156)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:167)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(AbstractTreeViewer.java:1071)
+	at org.eclipse.jface.viewers.StructuredViewer$UpdateItemSafeRunnable.run(StructuredViewer.java:426)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:167)
+	at org.eclipse.jface.viewers.StructuredViewer.updateItem(StructuredViewer.java:2110)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createTreeItem(AbstractTreeViewer.java:892)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(AbstractTreeViewer.java:870)
+	at org.eclipse.jface.viewers.TreeViewer.createChildren(TreeViewer.java:611)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(AbstractTreeViewer.java:817)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalExpand(AbstractTreeViewer.java:1734)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.setSelectionToWidget(AbstractTreeViewer.java:2743)
+	at org.eclipse.jface.viewers.StructuredViewer.setSelectionToWidget(StructuredViewer.java:1705)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.setSelectionToWidget(AbstractTreeViewer.java:3259)
+	at org.eclipse.jface.viewers.StructuredViewer.setSelection(StructuredViewer.java:1661)
+	at org.eclipse.jface.viewers.TreeViewer.setSelection(TreeViewer.java:1091)
+	at org.eclipse.ui.internal.views.markers.ExtendedMarkersView.setSelection(ExtendedMarkersView.java:1301)
+	at org.eclipse.ui.internal.views.markers.MarkerSupportInternalUtilities.showMarkers(MarkerSupportInternalUtilities.java:362)
+	at org.eclipse.ui.views.markers.MarkerViewUtil.showMarkers(MarkerViewUtil.java:130)
+	at org.eclipse.ui.views.markers.MarkerViewUtil.showMarker(MarkerViewUtil.java:96)
+	at org.eclipse.ui.texteditor.AbstractDecoratedTextEditor.updateMarkerViews(AbstractDecoratedTextEditor.java:2298)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaEditor.updateMarkerViews(JavaEditor.java:3174)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaEditor.updateStatusLine(JavaEditor.java:3624)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaEditor.selectionChanged(JavaEditor.java:2275)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaEditor$EditorSelectionChangedListener.selectionChanged(JavaEditor.java:311)
+	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2725)
+	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2655)
+	at org.eclipse.jface.text.TextViewer.postSelectionChanged(TextViewer.java:2638)
+	at org.eclipse.jface.util.Throttler.lambda$0(Throttler.java:66)
+	at org.eclipse.swt.widgets.Display.runTimer(Display.java:4234)
+	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3347)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3722)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:678)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:583)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:185)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:413)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+!SESSION 2025-08-19 12:43:14.355 -----------------------------------------------
+eclipse.buildId=4.36.0.202506052058
+java.version=21.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2025-08-19 12:43:56.711
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2025-08-19 12:43:56.997
+!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.31.0 (331) Component descriptor entry 'OSGI-INF/*.xml' not found
+
+!ENTRY ch.qos.logback.classic 1 0 2025-08-19 12:44:09.511
+!MESSAGE Logback config file: C:\Users\Administrator\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-08-19 12:44:10.736
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-08-19 12:44:10.736
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-08-19 12:44:11.587
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-08-19 12:44:11.587
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2025-08-19 12:44:28.463
+!MESSAGE No search provider was registered. Tasks search is not available.
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-08-19 12:44:29.091
+!MESSAGE Timed out after waiting for 300ms for semantic tokens from Language Servers
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaSemanticTokensProvider.computeSemanticTokens(LSJavaSemanticTokensProvider.java:68)
+	at org.eclipse.jdt.internal.ui.javaeditor.SemanticHighlightingReconciler.getContributedSemanticTokens(SemanticHighlightingReconciler.java:423)
+	at org.eclipse.jdt.internal.ui.javaeditor.SemanticHighlightingReconciler.reconciled(SemanticHighlightingReconciler.java:470)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.reconciled(CompilationUnitEditor.java:1674)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconciled(JavaReconcilingStrategy.java:228)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconciled(JavaCompositeReconcilingStrategy.java:171)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.initialReconcile(JavaCompositeReconcilingStrategy.java:147)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.initialProcess(MonoReconciler.java:100)
+	at org.eclipse.jdt.internal.ui.text.JavaReconciler.initialProcess(JavaReconciler.java:425)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:177)
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-08-19 12:44:30.670
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-08-19 12:44:45.452
+!MESSAGE Timed out after waiting for 300ms for semantic tokens from Language Servers
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaSemanticTokensProvider.computeSemanticTokens(LSJavaSemanticTokensProvider.java:68)
+	at org.eclipse.jdt.internal.ui.javaeditor.SemanticHighlightingReconciler.getContributedSemanticTokens(SemanticHighlightingReconciler.java:423)
+	at org.eclipse.jdt.internal.ui.javaeditor.SemanticHighlightingReconciler.reconciled(SemanticHighlightingReconciler.java:470)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.reconciled(CompilationUnitEditor.java:1674)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconciled(JavaReconcilingStrategy.java:228)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconciled(JavaCompositeReconcilingStrategy.java:171)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:115)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jface 2 0 2025-08-19 13:07:25.421
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-08-19 13:07:25.421
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolInWorkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolInWorkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SESSION 2025-08-20 12:33:08.970 -----------------------------------------------
+eclipse.buildId=4.36.0.202506052058
+java.version=21.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2025-08-20 12:34:15.624
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2025-08-20 12:34:15.888
+!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.31.0 (331) Component descriptor entry 'OSGI-INF/*.xml' not found
+
+!ENTRY ch.qos.logback.classic 1 0 2025-08-20 12:34:19.596
+!MESSAGE Logback config file: C:\Users\Administrator\Documents\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-08-20 12:34:20.169
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-08-20 12:34:20.169
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-08-20 12:34:20.607
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-08-20 12:34:20.607
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2025-08-20 12:34:39.254
+!MESSAGE No search provider was registered. Tasks search is not available.
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-08-20 12:34:40.097
+!MESSAGE Timed out after waiting for 300ms for semantic tokens from Language Servers
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaSemanticTokensProvider.computeSemanticTokens(LSJavaSemanticTokensProvider.java:68)
+	at org.eclipse.jdt.internal.ui.javaeditor.SemanticHighlightingReconciler.getContributedSemanticTokens(SemanticHighlightingReconciler.java:423)
+	at org.eclipse.jdt.internal.ui.javaeditor.SemanticHighlightingReconciler.reconciled(SemanticHighlightingReconciler.java:470)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.reconciled(CompilationUnitEditor.java:1674)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconciled(JavaReconcilingStrategy.java:228)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconciled(JavaCompositeReconcilingStrategy.java:171)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.initialReconcile(JavaCompositeReconcilingStrategy.java:147)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.initialProcess(MonoReconciler.java:100)
+	at org.eclipse.jdt.internal.ui.text.JavaReconciler.initialProcess(JavaReconciler.java:425)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:177)
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-08-20 12:34:41.600
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-08-20 12:34:57.537
+!MESSAGE Timed out after waiting for 300ms for semantic tokens from Language Servers
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaSemanticTokensProvider.computeSemanticTokens(LSJavaSemanticTokensProvider.java:68)
+	at org.eclipse.jdt.internal.ui.javaeditor.SemanticHighlightingReconciler.getContributedSemanticTokens(SemanticHighlightingReconciler.java:423)
+	at org.eclipse.jdt.internal.ui.javaeditor.SemanticHighlightingReconciler.reconciled(SemanticHighlightingReconciler.java:470)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.reconciled(CompilationUnitEditor.java:1674)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconciled(JavaReconcilingStrategy.java:228)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconciled(JavaCompositeReconcilingStrategy.java:171)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:115)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
