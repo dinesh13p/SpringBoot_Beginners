@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Homepage</title>
+	<style>
+		.bg-red {
+			background-color: lightslategray;
+		}
+
+		.bg-green {
+			background-color: lightgreen;
+		}
+
+		a {
+			text-decoration: none;
+			color: #000;
+		}
+	</style>
+</head>
+
+<body>
+	<form action="/products/search" method="get">
+		<input type="text" name="query"/>
+		<input type="submit" value="Search"/>
+	</form>
+	<h1>Available products:</h1>
+	<table>
+		<thead>
+			<th>SN</th>
+			<th>Name</th>
+			<th>Price</th>
+			<th>Actions</th>
+		</thead>
+		<tbody>
+
+			<!--
+			pStat.count : 1,2,3, ...
+			pStat.odd : true/false
+			pStat.even : true/false
+			pStat.first : true/false
+			pStat.last : true/false
+			pStat.size : size of array
+			pStat.index : 0,1,2, ...
+			-->
+
+			<!-- 
+				Display all the products in the table;
+				
+				* th:classappend is used to conditionally add CSS classes
+				* th:href is used to create dynamic hyperlinks
+			-->
+			<tr th:each="p : ${products}" th:classappend="|${pStat.odd ? 'bg-red' : ''}
+				${forUpdate && product.id == p.id ? 'bg-green': ''}|">
+				<td th:text="${pStat.count}"></td>
+				<td th:text="${p.name}"></td>
+				<td th:text="${p.price}"></td>
+				<td>
+					<!-- edit button -->
+					<a th:href="@{/products/edit/{id}(id=${p.id})}">✎</a>
+					
+					<!-- delete button -->
+					<form action="/products/delete" method="post">
+						<input type="hidden" name="id" th:value="${p.id}" />
+						<input type="submit" value="␡" />
+					</form>
+				</td>
+			</tr>
+
+		</tbody>
+	</table>
+
+	<!--
+		A single form can be used/reused for creating or update a product
+		
+		* th:object binds POJO 
+	-->
+	<form action="/product" method="POST" th:object="${product}">
+		Name:
+	<!-- <input type="text" name="name" id="name" value="${product.name}" /> 
+		the following line is equivalent to this one
+	-->	
+		<input type="text" th:field="*{name}" />
+		Price:
+		<input type="number" name="price" th:field="*{price}" />
+		<input th:if="${forUpdate}" type="hidden" name="id" th:value="${product.id}" />
+		<input type="submit" th:value="${forUpdate ? 'UPDATE' : 'ADD'}" />
+	</form>
+</body>
+
+</html>

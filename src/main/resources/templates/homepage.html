@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head><title>Homepage</title></head>
+<body>
+	<h1 th:text="'Welcome ' + ${name} + '!'"></h1>
+	
+	<p th:if="${isClosed}">College is closed today.</p>
+	
+	<p>Some fruits are:</p>
+	<ol>
+		<li th:each="fruit: ${fruits}" th:text="${fruit}"></li>
+	</ol>
+</body>
+</html>
+
+<!-- 
+TASK: create a table of computer accessories available for purchase as follows:
+
+Name		Price
+Mouse		950
+USB Headset	2700
+Laptop		128000
+...
+* Create a class to store info about each product
+-->
+
+

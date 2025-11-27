@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Login</title>
+</head>
+
+<body>
+	<!-- this is a comment -->
+	<h1 th:text="'Welcome, ' + ${name} + '!'"></h1>
+
+	<!-- conditional expression -->
+	<p th:text="${name.length} > 0 ? ${name} : 'N/A'"></p>
+	
+	<!-- basic loop -->	
+	<p th:each="food: ${foods}" th:text="${food.name}"></p>
+	
+	<!-- loop with conditional expression -->
+	<p th:each="food: ${foods}" th:text="${food.name} + ': ' + (${food.isFruit} ? 'FRUIT' : 'NON-FRUIT')"></p>
+	
+	<form action="/login" method="post">
+		<input type="text" placeholder="Username" name="username" />
+		<input type="password" placeholder="Password" name="password" />
+		<input type="submit" value="LOGIN" />
+	</form>
+</body>
+</html>
